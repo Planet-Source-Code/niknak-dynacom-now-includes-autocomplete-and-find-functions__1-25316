@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><i><b><font face="Arial, Helvetica, sans-serif">MEMBER SUBS</font></b></i> 
+</p>
+<table width="75%" border="0">
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Setautocomplete(enabled 
+      as boolean)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">When <font color="#00CC00">True</font>, 
+      entries are autocompleted as typed</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Setclearonreturn(enabled 
+      as boolean)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">When <font color="#00CC00">True</font> 
+      the current entry is cleared when return is pressed</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Setmaxentrues(value 
+      as integer)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Sets the maximum 
+      number of entries in the list</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">about()</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Shows the about 
+      form </font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Clearentries()</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Clears all entries 
+      in the list</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Cropentries(<font color="#0000FF">tomaxentries</font> 
+      as boolean,Optional <font color="#0000FF">value</font> as integer)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Shortens the 
+      list. When<font color="#0000FF"> tomaxentries</font> the list is shortened 
+      to the value set in <font color="#FF0000">Setmaxentries</font>, <font color="#0000FF">value</font> 
+      is only used when <font color="#0000FF">tomaxentries</font> is <font color="#00CC00">False</font>, 
+      it enables you to define the ammount of entries you want to shorten the 
+      list to.</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Loadentries(<font color="#0000FF">filename</font> 
+      as string)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Loads all list 
+      entries from a give <font color="#0000FF">filename</font>, 1 item per line</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Setcleartip(tip 
+      as string)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Sets the tooltiptext 
+      for the clear button</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Setcombotip(tip 
+      as string)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Sets the tooltiptext 
+      for the combo box</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Setcurrententry(entry 
+      as string)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Sets the current 
+      entry in the list to entry</font></b></td>
+  </tr>
+  <tr> 
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Saveentries(<font color="#0000FF">filename</font> 
+      as string)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Saves all list 
+      entries to a given <font color="#0000FF">filename</font>, can be loaded 
+      again with Loadentries</font></b></td>
+  </tr>
+</table>
+<p><i><b><font face="Arial, Helvetica, sans-serif">MEMBER FUNCTIONS</font></b></i> 
+</p>
+<table width="75%" border="0">
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Getmaxentries() 
+      as integer</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Returns the value 
+      set with <font color="#FF0000">Setmaxentries</font></font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Addentry(<font color="#0000FF">entry</font> 
+      as string) as boolean</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Adds an <font color="#0000FF">entry</font> 
+      to the list, <font color="#009900">True</font> is returned if the item was 
+      added. The item will not be added if it is either empty or allready in the 
+      list.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Delentrystring(<font color="#0000FF">entry</font> 
+      as string) as boolean</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Automatically 
+      finds a given <font color="#0000FF">entry</font> by string and removes it 
+      from the list, if the deletion is successful <font color="#009900">True</font> 
+      is returned.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Delentryindex(<font color="#0000FF">index 
+      </font>as integer) as boolean</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Deletes an entry 
+      by its <font color="#0000FF">index</font>, entries start at 0.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Findentry(<font color="#0000FF">entry</font> 
+      as string,completematch as boolean) as integer</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Finds an <font color="#0000FF">entry</font> 
+      in the list by string and returns the entries Index. If unsuccessful <font color="#993399">-1</font> 
+      is returned.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Getcurrententry() 
+      as string</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Returns the current 
+      entry as a string. The current entry is the one being typed.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Getentry(<font color="#0000FF">index</font> 
+      as integer) as string</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Returns the entry 
+      defined by<font color="#0000FF"> index</font>.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">Getnoofentries() 
+      as integer</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Gets the number 
+      of entries in the list.</font></b></td>
+  </tr>
+</table>
+<p><i><b><font face="Arial, Helvetica, sans-serif">EVENTS</font></b></i></p>
+<table width="75%" border="0">
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">entryadded(<font color="#0000FF">entry</font> 
+      as string)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Raised when an 
+      item is added to the list, the item is returned in <font color="#0000FF">entry</font>.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%" height="33"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">entrynotadded(<font color="#0000FF">entry</font> 
+      as string)</font></i></td>
+    <td width="55%" height="33"><b><font face="Arial, Helvetica, sans-serif">Raised 
+      when an item is not added, because it allready exists in the list or Setmaxentries 
+      is set to 0. The item is returned in <font color="#0000FF">entry</font>.</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">clearrequest()</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Raised when the 
+      clear button is clicked</font></b></td>
+  </tr>
+  <tr>
+    <td width="45%"><i><font face="Arial, Helvetica, sans-serif" color="#FF0000">entrychanged(<font color="#0000FF">entry</font> 
+      as string)</font></i></td>
+    <td width="55%"><b><font face="Arial, Helvetica, sans-serif">Raised when data 
+      is typed into the combo box, the new item is returned in <font color="#0000FF">entry</font>.</font></b></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
